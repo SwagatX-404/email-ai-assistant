@@ -11,7 +11,8 @@ import java.util.Map;
 
 @Service
 public class EmailGeneratorService {
-
+//AiService
+    //CohereAiService
     private final WebClient webClient;
 
     @Value("${gemini.api.url}")
@@ -38,12 +39,14 @@ public class EmailGeneratorService {
                 }
         );
 
+            //for cohera Authorization header rather than .uri(geminiApiUrl + geminiApiKey)
 
 
         //do req and get res
         String response = webClient.post()
                 .uri(geminiApiUrl + geminiApiKey)
                 .header("Content-Type", "application/json")
+                .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
