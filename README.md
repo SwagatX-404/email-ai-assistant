@@ -27,9 +27,6 @@ All three repositories contain detailed `README.md` files with setup, configurat
 
 ---
 
-**Made with** ☕ **+** 🤖 **by Swagat Kumar**
-
-Below, you'll find professional README.md templates for each repository. Copy and paste the content into the respective README.md file in each repo. Customize placeholders (e.g., <your-repo-url>, <your-gemini-api-key>) with actual values.
 
 ## Table of Contents
 - [Introduction](#introduction)
